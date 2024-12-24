@@ -1,0 +1,56 @@
+:root{
+    --footer-back: black;
+}
+
+
+.footer{
+    background-color: var(--footer-back);
+}
+
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-links:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--footer-back);
+    transition: 0.5s;
+}
+
+.footer .mediaicons{
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer .mediaicons:hover{
+    background-color: white;
+    color: var(--footer-back);
+    transition: 0.5s;
+}
+
+.footer-uper-btn{
+    height: 10px;
+    width: 100%;
+    color: black;
+    background-color: var(--footer-back);
+    box-shadow: 0 0 100px var(--footer-back),
+        0 0 90px var(--footer-back),
+        0 0 80px var(--footer-back),
+        0 0 70px var(--footer-back),
+        0 0 60px var(--footer-back),
+        0 0 50px var(--footer-back),
+        0 0 40px var(--footer-back),
+        0 0 30px var(--footer-back),
+        0 0 20px var(--footer-back),
+        0 0 10px var(--footer-back);
+}

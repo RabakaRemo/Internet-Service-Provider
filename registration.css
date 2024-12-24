@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--body-background-color);
+}
+
+.page-title{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background: black;
+    color: white;
+    font-weight: 900;
+    font-family: cursive;
+    overflow: hidden;
+    box-shadow: 15px 15px 25px rgba(0,0,0,.6);
+}
+
+.registration-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: var(--registration-box-width);
+    height: var(--registration-box-height);
+    transform: translate(-50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 15px 15px 25px rgba(0,0,0,.6);
+    border-radius: 50px 0px;
+    overflow: hidden;
+}
+
+form{
+    position: absolute;
+    padding: 40px;
+    inset: 2px;
+    border-radius: 50px 0px;
+    background-color: black;
+    z-index: 1;
+}
+
+.registration-box::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: var(--registration-box-width);
+    height: var(--registration-box-height);
+    background: linear-gradient(0deg, transparent, #D4DCCD,#D4DCCD);
+    transform-origin: bottom right;
+    animation: ani-form-div 6s linear infinite;
+}
+.registration-box::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: var(--registration-box-width);
+    height: var(--registration-box-height);
+    background: linear-gradient(0deg, transparent, #EFAAC4, #EFAAC4);
+    transform-origin: bottom right;
+    animation: ani-form-div 6s linear -3s infinite;
+}
+@keyframes ani-form-div{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.registration-box h2 {
+    margin: 0 0 30px; 
+    color: #fff;
+    text-align: center;
+}
+
+.registration-box .user-input {
+    position: relative;
+}
+
+.registration-box .user-input input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.registration-box .user-input label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.registration-box .user-input input:focus ~ label,
+.registration-box .user-input input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.input-error{
+    position: absolute;
+    text-overflow: ellipsis;
+    margin-top: -30px;
+    font-size: 13px;
+}
+
+.registration-span {
+    overflow: hidden;
+    transition: 1s;
+}
+
+.registration-span:hover {
+    background: #03e9f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.registration-btn {
+    position: relative;
+    display: inline-block;
+    color: #03e9f4;
+    font-size: 16px;
+    transition: .5s;
+    margin: 2px;
+    background: black;
+    border: none;
+}
+
+.registration-btn:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+span {
+    position: absolute;
+    display: block;
+}
+
+
+.span-top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-top 1s linear infinite;
+}
+@keyframes btn-top {
+    0% {left: -100%;}
+    50%,100% {left: 100%;}
+}
+
+.span-right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-right 1s linear 0.25s infinite;
+}
+@keyframes btn-right {
+    0% { top: -100%;}
+    50%,100% {top: 100%;}
+}
+
+.span-bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-bottom 1s linear 0.5s infinite;
+}
+@keyframes btn-bottom {
+    0% {right: -100%;}
+    50%,100% {right: 100%;}
+}
+
+
+
+.span-left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-left 1s linear 0.75s infinite;
+}
+@keyframes btn-left {
+    0% {bottom: -100%;}
+    50%,100% {bottom: 100%;}
+}

@@ -1,0 +1,34 @@
+.footer{
+    background-color: black;
+}
+
+
+.footer-links {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-links:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: 0.5s;
+}
+
+.footer .mediaicons{
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer .mediaicons:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}

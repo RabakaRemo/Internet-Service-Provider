@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--body-background-color);
+}
+
+.index-btn a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--carousel-btn-color);
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 2px
+}
+
+.index-btn a:hover {
+    background: var(--carousel-btn-color);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--carousel-btn-color),
+        0 0 25px var(--carousel-btn-color),
+        0 0 50px var(--carousel-btn-color),
+        0 0 100px var(--carousel-btn-color);
+}
+
+.index-btn a span {
+    position: absolute;
+    display: block;
+}
+
+.index-btn a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--carousel-btn-color));
+    animation: btn-top 1s linear infinite;
+}
+@keyframes btn-top {
+    0% {left: -100%;}
+    50%,100% {left: 100%;}
+}
+
+.index-btn a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--carousel-btn-color));
+    animation: btn-right 1s linear 0.25s infinite;
+}
+@keyframes btn-right {
+    0% { top: -100%;}
+    50%,100% {top: 100%;}
+}
+
+.index-btn a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--carousel-btn-color));
+    animation: btn-bottom 1s linear 0.5s infinite;
+}
+@keyframes btn-bottom {
+    0% {right: -100%;}
+    50%,100% {right: 100%;}
+}
+
+
+
+.index-btn a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--carousel-btn-color));
+    animation: btn-left 1s linear 0.75s infinite;
+}
+@keyframes btn-left {
+    0% {bottom: -100%;}
+    50%,100% {bottom: 100%;}
+}

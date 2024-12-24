@@ -1,0 +1,23 @@
+.card-box{
+    width: 18rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+h5{
+    font-weight: bolder;
+}
+
+.card-box:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-text{
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.card-side{
+    width: 10px;
+    height: 100%;
+}

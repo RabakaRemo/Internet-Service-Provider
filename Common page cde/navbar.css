@@ -1,0 +1,51 @@
+.navbar{
+    background-color: rgba(8, 235, 50, 0.3);
+}
+
+.fa-list-ul{
+    color: black;
+}
+
+.navbar-toggler:hover{
+    background: rgba(8, 235, 50, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(8, 235, 50, 0.5),
+        0 0 25px rgba(8, 235, 50, 0.5),
+        0 0 50px rgba(8, 235, 50, 0.5),
+        0 0 100px rgba(8, 235, 50, 0.5);
+}
+
+.nav-text-decoration{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-icon:hover{
+    font-weight: bold;
+}
+
+nav .dropdown-menu{
+    background-color: greenyellow;
+}
+
+nav .dropdown-item:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.org-name:hover{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: rgba(8, 235, 50, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(8, 235, 50, 0.5),
+        0 0 25px rgba(8, 235, 50, 0.5),
+        0 0 50px rgba(8, 235, 50, 0.5),
+        0 0 100px rgba(8, 235, 50, 0.5);
+}
+
+.nav-item:hover{
+    background: rgba(255, 255, 0, 0.5);
+    font-weight: bold;
+}
